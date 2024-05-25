@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+    text-decoration: none; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 3px black;
+    align-items: center;
+    background: radial-gradient(circle, rgba(253,29,29,1) 70%, rgba(252,176,69,1) 80%);
+}
+
+#check{
+    opacity: 0;
+    position: absolute;
+}
+
+.fa-moon{
+    color: rgba(131,58,180,1);
+}
+
+.fa-sun{
+    color: rgba(252,176,69,1);
+}
+
+.label {
+    margin: 0px 30px;
+    background: rgba(253,29,29,1);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label  .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+#check:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.navegar{
+    margin: 0% 33.3%;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    font-size: 25px;
+    color: white;
+    transition: border-radius 0.3s, background-color 0.3s, color 0.3s;
+    padding: 5px;
+}
+
+.link:hover{
+    color: rgba(253,29,29,1);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 25px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.titulo{
+    font-weight: bolder; 
+    font-size: 25px;
+    padding: 20px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.topico{
+    font-weight: bolder; 
+    font-size: 25px;
+    padding: 20px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+span{
+    color: rgba(253,29,29,1);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+
+.contato{
+    width: 500px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px 3px black;
+    display: flex;
+}
+
+#contato-conteudo{
+    width: 295px;
+    height: 550px;
+    color: black;
+    margin: 10px 77.5px;
+} 
+
+.contato-tema{
+    width: 140px;
+    height: 550px;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(131,58,180,1) 30%, rgba(253,29,29,1) 70%, rgba(252,176,69,1) 80%);
+}
+  
+#contato-conteudo input, textarea{
+    font-size: larger;
+  }
+
+#campo{
+    align-items: center;
+    font-size: 10px;
+}
+
+fieldset {
+    border: medium none;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contato-conteudo input,textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  
+  #contato-conteudo input:hover,textarea:hover {
+    transition: border-color 0.3s;
+    transition: border-color 0.3s;
+    transition: border-color 0.3s;
+    border: 1px solid #aaa;
+  }
+  
+  #contato-conteudo textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contato-conteudo button{
+    cursor: pointer;
+    width: 50%;
+    border: 2px solid rgba(253,29,29,1) ;
+    align-items: center;
+    background: rgba(253,29,29,1) ;
+    color: white;
+    margin-left: 85px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+#contato-conteudo button:hover {
+    background: white;
+    color: rgba(252,176,69,1);
+    border: 2px solid rgba(252,176,69,1);
+    transition: background-color 0.3s;
+  }
+  
+#contato-conteudo p {
+    text-align: center;
+    
+  }
+  
+#contato-conteudo input:focus, textarea:focus {
+    outline: 0;
+    border: 1px solid darkblue;
+  }
+
+footer{
+    background: radial-gradient(circle, rgba(253,29,29,1) 70%, rgba(252,176,69,1) 80%);
+    width: 100%;
+    height: 135px;
+}
+
+.rodape{
+    text-align: center;
+    font-size: larger;
+    padding: 45.1px;
+    color: white;
+}
+
+/* Modo escuro */
+body.dark-mode main {
+    background: rgb(3, 0, 27);
+    color: white;
+}
+
