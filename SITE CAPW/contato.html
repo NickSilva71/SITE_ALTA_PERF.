@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projeto de Alta Performance</title>
+</head>
+<body>
+    <header>
+        <aside>
+            <div>
+                <input type="checkbox" id="check">
+                <label class="label" for="check">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </aside>
+        <nav class="navegar">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="galeria.html">Galeria</a>
+            <a class="link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="titulo"><h1>PROJETO DE ALTA PERFORMANCE</h1></div>        
+        <div class="topico"><h2>Efetue o seu <span>login</span>.</h2></div> 
+        <section>
+            <div class="contato">
+                <div class="contato-tema"></div>
+                <div id="contato-conteudo">
+                    <h1>Entre em contato</h1>
+                    <br>
+                    <form id="contato-form">
+                        <div id="campo">
+                            <fieldset>
+                                <input type="text" id="nome" placeholder="Nome">
+                                <p id="aviso-nome" class="aviso"></p>
+                            </fieldset>
+                            <fieldset>
+                                <input type="email" id="email" placeholder="Email">
+                                <p id="aviso-email" class="aviso"></p>
+                            </fieldset>
+                            <fieldset>
+                                <input type="password" id="senha" placeholder="Senha">
+                                <p id="aviso-senha" class="aviso"></p>
+                            </fieldset>
+                            <fieldset>
+                                <input type="tel" id="telefone" placeholder="Telefone (Opcional)">
+                            </fieldset>
+                            <fieldset>
+                                <textarea id="mensagem" placeholder="Nos deixe uma mensagem"></textarea>
+                                <p id="aviso-mensagem" class="aviso"></p>
+                            </fieldset>
+                            <fieldset>
+                                <button type="submit" id="open-modal">Enviar</button>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <div id="fade" class="hide"></div>
+                    <div id="modal" class="hide">
+                        <div class="modal-header">
+                            <h2 id="modal-header-text"></h2>
+                            <button id="close-modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            <p>Centro Universitário Maurício de Nassau - Recife, PE</p>
+            <p>UNINASSAU© 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
