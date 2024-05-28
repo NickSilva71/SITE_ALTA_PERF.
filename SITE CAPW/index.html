@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projeto de Alta Perfomance</title>
+</head>
+<body>
+    <header>
+        <aside>
+            <div>
+                <input type="checkbox" id="check">
+                
+                <label class="label" for="check">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </aside>
+        <nav class="navegar">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="galeria.html">Galeria</a>
+            <a class="link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="titulo">
+            <h1>PROJETO DE ALTA PERFORMANCE</h1></div>
+            <div class="paragrafo"><p>Este website tem o intuito de <span>avaliar</span> 
+            as competências dos alunos nas seguintes tecnologias: 
+            <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
+        </div>
+        
+        <div class="topico"><h2>Conheça os <span>integrantes</span> deste grupo.</h2></div> 
+       
+        <section class="card-container">
+            <div class="card" onclick="infos(0)"><div class="card-background"><img src="IMG/perfil_nicolas.jpg" alt="" class="fotos-card"></div></div>
+            <div class="card" onclick="infos(1)"><div class="card-background"><img src="IMG/perfil_sergio.jpeg" alt="" class="fotos-card"></div></div>
+            <div class="card" onclick="infos(2)"><div class="card-background"><img src="IMG/perfil_dario.jpeg" alt="" class="fotos-card"></div></div>
+            <div class="card" onclick="infos(3)"><div class="card-background"><img src="IMG/perfil_eric.jpeg" alt="" class="fotos-card"></div></div>
+            <div class="card" onclick="infos(4)"><div class="card-background"><img src="IMG/perfil_luis.jpeg" alt="" class="fotos-card"></div></div>
+        </section>
+        
+        <section class="apresentacao hidden" id="apresentacao">
+            <button id="bttn-anterior" onclick="voltar()"><</button>
+            <div class="curriculo">
+                <div class="curriculo-tema">
+                    <figure>
+                        <img src="" alt="" id="imagem-alunos">
+                    </figure>
+                </div>
+                <div id="curriculo-conteudo">   
+                    <div class="textos-alunos">
+                        <div id="nome-linha"><span >Nome:</span> <p id="nome"></p></div> 
+                        <div id="idade-linha"><span>Idade:</span><p id="idade"></p></div>
+                        <div id="competencia-linha"><span>Competências:</span><p id="competencia"></p></div></div>
+                    <article>
+                        <p id="resumo"> </p>
+                    </article>
+                    <div class="curriculo_links">
+                        <a id="link-github" href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+                        <a id="link-linkedin" href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div> 
+                </div>   
+            </div>
+            <button id="bttn-proximo" onclick="avancar()">></button>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            <p>Centro Universitário Maurício de Nassau - Recife, PE</p>
+            <p>UNINASSAU© 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
