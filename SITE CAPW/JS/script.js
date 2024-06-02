@@ -227,7 +227,7 @@ let carros = [
         foto: 'IMG/corolla-hibrido.jpg', 
         consumo: 'Urbano: 11,8km/L(A), 17,9km/L(G). Rodoviário: 10,5km/L(A), 15,4km/L(G).',
         motor: '1.8 101cv(A), 98cv(G) a 5200 rpm.',
-        cambio: 'CVT de 0 marchas, P610.'
+        cambio: 'CVT de 10 marchas, P610.'
     },
     
     {
@@ -241,7 +241,7 @@ let carros = [
     },
     
     {
-        marca: 'Reanult',   
+        marca: 'Renault',   
         modelo: 'Captur',
         ano: '2021',
         foto: 'IMG/renault-captur.jpg', 
